@@ -9,7 +9,11 @@ function getProducts(int $categoryId)
     return $result;
 }
 
-function getProduct(int $productId)
+function getProduct(int $productid)
 {
-    
+    global $pdo;
+    $trv = $pdo->prepare("SELECT * FROM products WHERE id = $productid");
+    $trv ->execute();
+    $productResult = $trv->fetchAll(PDO::FETCH_CLASS, "product");
+    return $productResult;
 }

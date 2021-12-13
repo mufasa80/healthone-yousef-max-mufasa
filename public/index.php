@@ -33,7 +33,6 @@ switch ($params[1]) {
         } else {
             // TODO Toon de categorieen
             $categories = getCategories();
-            var_dump($categories);
             include_once "../Templates/categories.php";
         }
         break;
