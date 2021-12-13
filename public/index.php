@@ -28,16 +28,18 @@ switch ($params[1]) {
                 // TODO Zorg dat je hier de product pagina laat zien
             } else {
                 // TODO Zorg dat je hier alle producten laat zien van een categorie
+                include_once "../Templates/products.php";
             }
         } else {
             // TODO Toon de categorieen
             $categories = getCategories();
+            var_dump($categories);
             include_once "../Templates/categories.php";
         }
         break;
-    case  'contacts':
-        $titleSuffix = ' | Contacts';
-        include_once "../Templates/contact.php";
+    case'contacts':
+        $titleSuffix = '| Contact';
+        include_once "../Templates/contacts.php";
         break;
     default:
         $titleSuffix = ' | Home';

@@ -11,13 +11,12 @@ include_once('defaults/head.php');
     include_once ('defaults/pictures.php');
     ?>
 
-
+<div class="center">
     <h4>Sportcenter HealthOne</h4>
     Wij zijn geopend van
-
     <div class="contactIntro">
         <h4>Sportcenter HealthOne</h4>
-    <hr>
+        <hr>
         <strong>Welkom bij ons contact pagina! <br> </strong>
         <p>op deze pagina word ons contact gevens, locatie en openingstijden weergeven.</p><br>
     </div>
@@ -27,6 +26,7 @@ include_once('defaults/head.php');
         <i class="fas fa-mobile-alt fs-4">+31611143065</i>
         <i class="far fa-paper-plane fs-4">healthonecontact@gmail.com</i>
     </div>
+</div>
 
     <hr>
     <?php
@@ -34,4 +34,4 @@ include_once('defaults/head.php');
     ?>
 </div>
 </body>
-</html>
+</html><?php

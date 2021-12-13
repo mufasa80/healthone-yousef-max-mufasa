@@ -11,24 +11,17 @@ include_once('defaults/head.php');
     include_once('defaults/header.php');
     include_once('defaults/menu.php');
     include_once('defaults/pictures.php');
-    global $categories;
+    global $products;
     ?>
-
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/home">Home</a></li>
-            <li class="breadcrumb-item"><a href="/categories">Categories</a></li>
-        </ol>
-    </nav>
     <div class="row gy-3 ">
-        <?php foreach ($categories as $category): ?>
+        <?php foreach ($products as $product): ?>
             <div class="col-sm-4 col-md-3">
                 <div class="card">
                     <div class="card-body text-center">
-                        <a href="/categories/<?php echo $category->id?>">
-                            <img class="product-img img-responsive center-block" src='/img/categories/<?php echo $category->picture?>'/>
+                        <a href="/categories/<?php echo $product->id?>">
+                            <img class="product-img img-responsive center-block" src='<?php echo $product->picture?>'/>
                         </a>
-                        <div class="card-title mb-3"><?php echo $category->title?></div>
+                        <div class="card-title mb-3"><?php echo $product->name?></div>
                     </div>
 
                 </div>
@@ -44,4 +37,3 @@ include_once('defaults/head.php');
 
 </body>
 </html>
-

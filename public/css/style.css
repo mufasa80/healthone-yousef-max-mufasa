@@ -1,11 +1,9 @@
 body {
-    background-color: #333;
-    text-align: center;
+    background-color: gainsboro
 }
 
 .container {
-    background-color: rgba(255, 251, 251, 0.31);
-    color: white;
+    background-color: white;
 }
 
 .pull-right img-thumbnail {
@@ -27,4 +25,7 @@ body {
 
 .product-img {
     width: 70%;
+}
+.center{
+    text-align: center;
 }
